@@ -3,7 +3,7 @@ public class PrimoVetor {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         final int TAM = 10;
-        int[] a = new int[TAM];
+        int a[] = new int[TAM];
         for (int i = 0; i < TAM; i++) {
             System.out.println("Insira o " + (i + 1) + "º número:");
             a[i] = ler.nextInt();
@@ -21,7 +21,6 @@ public class PrimoVetor {
                 System.out.println(a[i] + " não é primo.");
             }
         }
-        
         System.out.println("Números no vetor:");
         System.out.print("\nA = [ ");
         for (int i = 0; i < TAM; i++) {
