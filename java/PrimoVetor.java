@@ -1,12 +1,12 @@
 import java.util.Scanner;
 public class PrimoVetor {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
         final int TAM = 10;
         int[] a = new int[TAM];
         for (int i = 0; i < TAM; i++) {
-            System.out.println("Insira o " + (i + 1) + "º número:");
-            a[i] = in.nextInt();
+            System.out.println("Insira o " + (i + 1) + "Âº nÃºmero:");
+            a[i] = ler.nextInt();
         }
         for (int i = 0; i < TAM; i++) {
             int divisor = 0;
@@ -16,18 +16,18 @@ public class PrimoVetor {
                 }
             }
             if (divisor == 2) {
-                System.out.println(a[i] + " é primo.");
+                System.out.println(a[i] + " Ã© primo.");
             } else {
-                System.out.println(a[i] + " não é primo.");
+                System.out.println(a[i] + " nÃ£o Ã© primo.");
             }
         }
         
-        System.out.println("Números no vetor:");
+        System.out.println("NÃºmeros no vetor:");
         System.out.print("\nA = [ ");
         for (int i = 0; i < TAM; i++) {
             System.out.print(a[i] + " ");
         }	
         	System.out.println("]");
-        in.close();
+        ler.close();
     }
 }
